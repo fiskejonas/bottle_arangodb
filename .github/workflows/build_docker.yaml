@@ -1,0 +1,19 @@
+name: Build Docker
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v2
+
+            - name: Build Docker image
+              run: docker build -t testing image .
+
+            # Add more steps here if needed, such as pushing the image to a registry or running tests

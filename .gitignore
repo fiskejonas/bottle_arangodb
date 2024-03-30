@@ -1,2 +1,2 @@
 __pycache__
-arangodb/engine-rocksdb/*
+arangodb/engine-rocksdb/

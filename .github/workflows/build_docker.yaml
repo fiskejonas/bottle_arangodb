@@ -14,6 +14,6 @@ jobs:
               uses: actions/checkout@v2
 
             - name: Build Docker image
-              run: docker build -t testing image .
+              run: docker build -t testing_image .
 
             # Add more steps here if needed, such as pushing the image to a registry or running tests
